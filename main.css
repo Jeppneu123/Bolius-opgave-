@@ -1,0 +1,44 @@
+*
+{
+    font-family: 'Merriweather', serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.start-page
+{
+    background-image: url("cute chubby house.jpg");
+    background-repeat: round;
+}
+
+.start-page .logo img
+{
+    margin: 100px;
+    width: 300px;
+    height: 150px;
+}
+
+.start-page .identitet .icon img
+{
+    width: 140px;
+    height: 75px;
+}
+
+.start-page .identitet .slogan
+{
+    margin: 30px;
+    font-weight: bold;
+}
+
+.identitet
+{
+    display: flex;
+}
+
+.identitet .slogan
+{
+    position: relative;
+    bottom:0;
+    right:0;
+}
