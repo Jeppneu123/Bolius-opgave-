@@ -1,9 +1,13 @@
 *
 {
-    font-family: 'Merriweather', serif;
+   /* font-family: 'Merriweather', serif; */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+body
+{
+    overflow:hidden;
 }
 
 .start-page
@@ -11,6 +15,83 @@
     background-image: url("cute chubby house.jpg");
     background-repeat: round;
     height: 550px;
+}
+
+.cloud
+{
+    opacity: 0.3;
+    position: absolute;
+    left:0;
+    background: white;
+    border-radius: 1000px;
+    animation: chasingTheWind 10s infinite linear ;
+}
+
+.cloud.cloudOne
+{
+    top:7%;
+    width: 300px;
+    height: 100px;
+
+}
+
+.cloud.cloudTwo
+{
+    top:30%;
+    width: 60px;
+    height: 20px;
+    animation-duration: 15s;
+
+}
+
+.cloud.cloudThree
+{
+    top:20%;
+    width: 120px;
+    height: 40px;
+    animation-duration: 8s;
+}
+.cloud.cloudFour
+{
+    top:40%;
+    width: 40px;
+    height: 10px;
+    animation-duration: 8s;
+}
+
+
+
+.cloud::before{
+    content: "";
+    position: absolute;
+    top:-80%;
+    left:10%;
+    width:50%;
+    height: 150%;
+    background: white;
+    border-radius: 50%;
+}
+
+.cloud::after{
+    content: "";
+    position: absolute;
+    top:-40%;
+    right:20%;
+    width:30%;
+    height: 100%;
+    background: white;
+    border-radius: 50%;
+}
+
+@keyframes chasingTheWind {
+    from{
+        left:0%;
+        transform: translateX(-100%);
+    }
+    to{
+        left:100%;
+        transform:translateX(0%);
+    }
 }
 
 .start-page .logo img
@@ -28,9 +109,11 @@
 
 .start-page .identitet .slogan
 {
-    margin-top: 75px;
+    margin-top: 82px;
+    margin-right: 20px;
     font-weight: bold;
     font-size: 1.2rem;
+    font-family: 'Nerko One', cursive;
 }
 
 .identitet
@@ -41,3 +124,40 @@
     margin-right: 20px;
 }
 
+.floating-tags #bæredygtigt
+{
+
+    
+    /*
+    margin-bottom:20px;
+
+    margin-left: 1000px;
+    color:rgba(238,92,71) ;
+    padding:15px;
+    font-size: 20px;
+    font-weight: bolder ;
+    font-family: 'Merriweather', serif;
+
+     */
+}
+.floating-tags #sorteringen
+{
+
+}
+.floating-tags #huskVarmen
+{
+
+}
+.floating-tags #selv
+{
+
+}
+.floating-tags #byggematerialer
+{
+
+}
+
+.floating-tags #huskStrømmen
+{
+
+}
