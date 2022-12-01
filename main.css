@@ -10,6 +10,7 @@
 {
     background-image: url("cute chubby house.jpg");
     background-repeat: round;
+    height: 550px;
 }
 
 .start-page .logo img
@@ -21,24 +22,22 @@
 
 .start-page .identitet .icon img
 {
-    width: 140px;
-    height: 75px;
+    width: 200px;
+    height: 110px;
 }
 
 .start-page .identitet .slogan
 {
-    margin: 30px;
+    margin-top: 75px;
     font-weight: bold;
+    font-size: 1.2rem;
 }
 
 .identitet
 {
     display: flex;
+    float: right;
+    margin-top:  230px;
+    margin-right: 20px;
 }
 
-.identitet .slogan
-{
-    position: relative;
-    bottom:0;
-    right:0;
-}
