@@ -86,7 +86,7 @@ function displaySlideShow ()
             <img class="image" src="customsize.jpeg">
                 <div class="under-image-text-container">
                 <div> Ejendommen</div>
-                    <div>
+                    <div class="price-container">
                         <a class="price"> Kontantpris: <span class="price-in-numbers"> 4.644.000,- </span> </a>
                     </div>
                 
@@ -227,6 +227,10 @@ function displaySlideShow ()
     
   </div>
   
+  <div class="arrow-container"> 
+  
+        <p class="arrow down"> </p>
+  </div>
         `;
     document.querySelector("#slideshow-append-primary").innerHTML = html;
 
