@@ -147,7 +147,7 @@
 {
     align-items: center;
 }
-/* Slideshow */
+/* Slideshow primary */
 
 .slideshow-container
 {
@@ -167,7 +167,12 @@
     text-align: center;
 }
 
-.slides
+.slides-one
+{
+    display: none;
+}
+
+.slides-two
 {
     display: none;
 }
@@ -204,9 +209,7 @@
 {
     color: black;
     font-size: 13px;
-    padding:8px 12px;
-    position: absolute;
-    top:0;
+    padding:30px 40px;
 }
 
 
@@ -221,6 +224,13 @@
     to{opacity: 1}
 }
 
+.energy
+{
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+}
+
 .blala
 {
     margin-top:1000px;
@@ -229,5 +239,39 @@
 .block
 {
     display: block;
+}
+
+
+.energy img
+{
+    width: 75px;
+    height: 75px;
+    display: flex;
+}
+
+.image-text-container
+{
+    justify-content: center;
+    margin: 40px 0px 40px 0px;
+}
+
+.image-text
+{
+    align-items: center;
+}
+
+.price
+{
+    font-size: 20px;
+}
+
+.price-in-numbers
+{
+    font-size: 25px;
+}
+
+.red
+{
+    color: red;
 }
 
