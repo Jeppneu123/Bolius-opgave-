@@ -66,14 +66,13 @@ function displaySlideShow ()
     let html = "";
 
     html += `
-    <div class= "image-text-container">
-        <p class="image-text"> Det åbenlyse valg, alt spiller. Hvis du har travlt og ikke gider bruge tid og penge på, at opgradere dit hus <br>  </p>
-    </div>
 
-        <div>
-            <a class="price"> Kontantpris: <span class="price-in-numbers"> 4.644.000,- </span> </a>
-        </div>
-        
+<div class="container-for-slideshows">
+
+
+    <div class= "image-text-container">
+        <p class="image-text"> Det åbenlyse valg, alt spiller <br> - Hvis du har travlt og ikke gider bruge tid og penge på, at opgradere dit hus <br>  </p>
+    </div>
        
     <div class="slideshow-container">
 
@@ -85,7 +84,14 @@ function displaySlideShow ()
            </div>
             
             <img class="image" src="customsize.jpeg">
-                <div class="text"> Ejendommen</div>
+                <div class="under-image-text-container">
+                <div> Ejendommen</div>
+                    <div>
+                        <a class="price"> Kontantpris: <span class="price-in-numbers"> 4.644.000,- </span> </a>
+                    </div>
+                
+                    
+            </div>
         </div>
 
         <div class="slides-one fade">
@@ -95,7 +101,11 @@ function displaySlideShow ()
         </div>
             
             <img class="image" src="img 2 .jpeg">
-                <div class="text"> Ejendommen</div>
+            <div> Ejendommen</div>
+                <div>
+                        <a class="price"> Kontantpris: <span class="price-in-numbers"> 4.644.000,- </span> </a>
+                    </div>
+                
         </div>
 
         <div class="slides-one fade">
@@ -105,7 +115,11 @@ function displaySlideShow ()
         </div>
             
             <img class="image" src="img 3 .jpeg">
-                <div class="text"> Ejendommen</div>
+            <div> Ejendommen</div>
+                <div>
+                        <a class="price"> Kontantpris: <span class="price-in-numbers"> 4.644.000,- </span> </a>
+                    </div>
+                
         </div>
 
         <div class="slides-one fade">
@@ -115,7 +129,11 @@ function displaySlideShow ()
         </div>
             
             <img class="image" src="img 4 .jpeg">
-                <div class="text"> Ejendommen</div>
+            <div> Ejendommen</div>
+                <div>
+                        <a class="price"> Kontantpris: <span class="price-in-numbers"> 4.644.000,- </span> </a>
+                    </div>
+                
         </div>
 
         <div class="slides-one fade">
@@ -125,7 +143,11 @@ function displaySlideShow ()
         </div>
             
             <img class="image" src="img 5 .jpeg">
-                <div class="text"> Stue</div>
+            <div> Stue </div>
+                <div>
+                        <a class="price"> Kontantpris: <span class="price-in-numbers"> 4.644.000,- </span> </a>
+                    </div>
+                
         </div>
 
         <div class="slides-one fade">
@@ -135,7 +157,11 @@ function displaySlideShow ()
         </div>
             
             <img class="image" src="img 6 .jpeg">
-                <div class="text"> Køkken</div>
+            <div> Køkken </div>
+                <div>
+                        <a class="price"> Kontantpris: <span class="price-in-numbers"> 4.644.000,- </span> </a>
+                    </div>
+                
         </div>
 
         <div class="slides-one fade">
@@ -145,7 +171,11 @@ function displaySlideShow ()
         </div>
             
             <img class="image" src="img 7 .jpeg">
-                <div class="text"> Stue</div>
+            <div> Stue </div>
+                <div>
+                        <a class="price"> Kontantpris: <span class="price-in-numbers"> 4.644.000,- </span> </a>
+                    </div>
+                
         </div>
 
         <div class="slides-one fade">
@@ -155,7 +185,11 @@ function displaySlideShow ()
         </div>
             
             <img class="image" src="img 8.jpeg">
-                <div class="text"> Værelse</div>
+            <div> Værelse </div>
+                <div>
+                        <a class="price"> Kontantpris: <span class="price-in-numbers"> 4.644.000,- </span> </a>
+                    </div>
+                
         </div>
 
         <div class="slides-one fade">
@@ -165,7 +199,11 @@ function displaySlideShow ()
         </div>
             
             <img class="image" src="img 9.jpeg">
-                <div class="text"> Badeværelse</div>
+            <div> Badeværelse </div>
+                <div>
+                        <a class="price"> Kontantpris: <span class="price-in-numbers"> 4.644.000,- </span> </a>
+                    </div>
+                
         </div>
 
         <div class="slides-one fade">
@@ -175,14 +213,19 @@ function displaySlideShow ()
         </div>
             
             <img class="image" src="img 10 .jpeg">
-                <div class="textImg"> Plantegning</div>
+            <div> Plantegning </div>
+                <div>
+                        <a class="price"> Kontantpris: <span class="price-in-numbers"> 4.644.000,- </span> </a>
+                    </div>
+                
         </div>
 
         <a class="previous" onClick="plusSlidesOne(-1)">&#10094;</a>
         <a class="next" onClick="plusSlidesOne(1)">&#10095;</a>
 
     </div>
-  
+    
+  </div>
   
         `;
     document.querySelector("#slideshow-append-primary").innerHTML = html;
@@ -195,27 +238,33 @@ function displaySlideShow ()
 
         html += `
         
-         <div class= "image-text-container">
-            <p id ="image-text" > Har du overvejet et alternativ, med mulighed for stor forjeneste? <br> </p>
-            
+<div class="container-for-slideshows">
 
-        </div>
-        <div>
-            <a class="price"> Kontantpris: <span class="price-in-numbers"> 4.995.000,- </span> </a>
+         <div class= "image-text-container">
+            <p id ="image-text" > Har du overvejet et alternativ, med mulighed for stor fortjeneste?  <br> - Hvis du har lidt tid og tålmodighed og gerne vil ligge en lille ekstra investering <br> </p>
         </div>
         
-        <div>
-         <div class="slideshow-container">
+   <div class="slideshow-container">
 
         <div class="slides-two fade" id="first-image-secondary">
            <div class="energy">   
-           <div class="numbers"> 1 / 10</div>
-           <img src="Skærmbillede_2022-12-13_kl._11.01.27-removebg-preview.png"> 
-            
+                    <div class="numbers"> 1 / 10 </div>
+               <img src="Skærmbillede_2022-12-13_kl._11.01.27-removebg-preview.png">
+           </div> 
         </div>
           
             <img class="image" src="img 1.2.jpeg">
-                <div class="text"> Ejendommen</div>
+            <div class="under-image-text-container">
+            <div> Ejendommen</div>
+                    <div>
+                        <a class="price"> Kontantpris: <span class="price-in-numbers"> 4.995.000,- </span> </a>
+                    </div>
+                
+                    
+            </div>
+                    
+            </div>
+                
         </div>
 
         <div class="slides-two fade">
@@ -225,7 +274,13 @@ function displaySlideShow ()
         </div>
             
             <img class="image" src="img 2.2.jpeg">
-                <div class="text"> Ejendommen</div>
+                <div class="under-image-text-container">
+                <div> Ejendommen</div>
+                    <div>
+                        <a class="price"> Kontantpris: <span class="price-in-numbers"> 4.995.000,- </span> </a>
+                    </div>
+                
+            </div>
         </div>
 
         <div class="slides-two fade">
@@ -235,7 +290,14 @@ function displaySlideShow ()
         </div>
             
             <img class="image" src="img 3.2.jpeg">
-                <div class="text"> Ejendommen</div>
+                <div class="under-image-text-container">
+                <div> Ejendommen</div>
+                    <div>
+                        <a class="price"> Kontantpris: <span class="price-in-numbers"> 4.995.000,- </span> </a>
+                    </div>
+                
+                    
+            </div>
         </div>
 
         <div class="slides-two fade">
@@ -245,7 +307,14 @@ function displaySlideShow ()
         </div>
             
             <img class="image" src="img 4.2.jpeg">
-                <div class="text"> Ejendommen</div>
+                <div class="under-image-text-container">
+                <div> Ejendommen</div>
+                    <div>
+                        <a class="price"> Kontantpris: <span class="price-in-numbers"> 4.995.000,- </span> </a>
+                    </div>
+                
+                    
+            </div>
         </div>
 
         <div class="slides-two fade">
@@ -255,7 +324,14 @@ function displaySlideShow ()
         </div>
             
             <img class="image" src="img 5.2.jpeg">
-                <div class="text"> Stue</div>
+                <div class="under-image-text-container">
+                <div> Stue </div>
+                    <div>
+                        <a class="price"> Kontantpris: <span class="price-in-numbers"> 4.995.000,- </span> </a>
+                    </div>
+                
+                    
+            </div>
         </div>
 
         <div class="slides-two fade">
@@ -265,7 +341,14 @@ function displaySlideShow ()
         </div>
             
             <img class="image" src="img 6.2.jpeg">
-                <div class="text"> Køkken</div>
+                <div class="under-image-text-container">
+                <div> Køkken </div>
+                    <div>
+                        <a class="price"> Kontantpris: <span class="price-in-numbers"> 4.995.000,- </span> </a>
+                    </div>
+                
+                    
+            </div>
         </div>
 
         <div class="slides-two fade">
@@ -275,7 +358,14 @@ function displaySlideShow ()
         </div>
             
             <img class="image" src="img 7.2.jpeg">
-                <div class="text"> Stue</div>
+                <div class="under-image-text-container">
+                <div> Stue </div>
+                    <div>
+                        <a class="price"> Kontantpris: <span class="price-in-numbers"> 4.995.000,- </span> </a>
+                    </div>
+                
+                    
+            </div>
         </div>
 
         <div class="slides-two fade">
@@ -285,7 +375,14 @@ function displaySlideShow ()
         </div>
             
             <img class="image" src="img 8.2.jpeg">
-                <div class="text"> Værelse</div>
+                <div class="under-image-text-container">
+                <div> Værelse </div>
+                    <div>
+                        <a class="price"> Kontantpris: <span class="price-in-numbers"> 4.995.000,- </span> </a>
+                    </div>
+                
+                    
+            </div>
         </div>
 
         <div class="slides-two fade">
@@ -295,7 +392,14 @@ function displaySlideShow ()
         </div>
             
             <img class="image" src="img 9.2 tag den her!!!.jpeg ">
-                <div class="text"> Badeværelse</div>
+                <div class="under-image-text-container">
+                <div> Badeværelse </div>
+                    <div>
+                        <a class="price"> Kontantpris: <span class="price-in-numbers"> 4.995.000,- </span> </a>
+                    </div>
+                
+                    
+            </div>
         </div>
 
         <div class="slides-two fade">
@@ -305,27 +409,45 @@ function displaySlideShow ()
         </div>
             
             <img class="image" src="img 10.2.jpeg">
-                <div class="textImg"> Plantegning</div>
+                <div class="under-image-text-container">
+                <div> Plantegning </div>
+                    <div>
+                        <a class="price"> Kontantpris: <span class="price-in-numbers"> 4.995.000,- </span> </a>
+                    </div>
+                
+                    
+            </div>
         </div>
 
         <a class="previous" onClick="plusSlidesTwo(-1)">&#10094;</a>
         <a class="next" onClick="plusSlidesTwo(1)">&#10095;</a>
 
-    </div>
+
         
-        </div>
-   
+   <div class="container-for-slideshows">    
+   <br>
     <article>
-        <div class="image-text-container">
-            <p class="image-text"> Med en investering på 400.000 kr har du mulighed for, at opgradere fra energimærke D til A. Dette inkludere, implementering af vedvarende energi, isolering og nyt sæt vinduer. 
-             Salgsprisen på dit hus vil stige med 41 procent, med en opgradering fra energimærket D til A, </p>
-        </div>
-        <br>
-        <br> 
-        
-            <p> Med en hus værdi på: <span> 4.995.000,- </span> og en investering på 400.000. Vil du have brugt <span class="price-in-numbers red" > 5.395.000,-  </span> Du vil derfor
-               have brugt 75.100,- mere end på det åbenlyse valg. Men HOV, vi mangle de 41 %. Så </p>
+            <div class="image-text-container">
+                <p class="image-text"> Med en investering på 400.000 kr har du mulighed for, at opgradere fra energimærke <img src="Skærmbillede_2022-12-13_kl._11.01.27-removebg-preview.png" width="22px" height="22px"> til <img src="Skærmbillede_2022-12-13_kl._11.01.21-removebg-preview.png" width="22px" height="22px">. Dette inkludere, implementering af vedvarende energi, isolering og nyt sæt vinduer. 
+                  Med denne opgradering, vil salgsprisen på dit hus stige med ca. 41 procent.</p>
+            </div>
+            
+            <p> 
+                Med en hus værdi på: <span class="price-in-numbers"> 4.995.000,- </span> og en investering på 400.000. Vil du have brugt <span class="price-in-numbers red" > 5.395.000,-  </span>. Du vil desværre, have
+                have brugt 75.100,- mere end på det åbenlyse valg.
+                <br> 
+                Men HOV, vi mangler de 41 %, så det vil sige, at salgsværdien stiger til 7.042.950,-. Nu kan vi derfor udregne den mulige fortjeneste: <span class="price-in-numbers green"> 2.398.950,- </span>.
+                Som du ville gå glip af, ved at tage den nemme løsning.
+                <br> 
+                <br>
+                Konklusionen er derfor så, hvis du har tiden og overskuddet til det, ville vi helt klart anbefale, at vælge et hus 
+                med en ringere energi mærkning. Da du har i hovedstaden vil få en fortjeneste på omkring 2.5 millioner samtidig med du redder miljøet. På 'bare'
+                et halvt års arbejde og en lille investering.  
+            </p>
     </article>
+   
+    
+</div> 
         
         `;
 

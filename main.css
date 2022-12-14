@@ -9,7 +9,7 @@
 {
     background-image: url("cute chubby house.jpg");
     background-repeat: round;
-    height: 500px;
+    height: 470px;
 }
 
 .start-page .logo
@@ -50,27 +50,46 @@
     position: fixed;
     right:10px;
     bottom:10px;
+    z-index: 1000;
 }
 
 .dropdown-identity
 {
-    display:flex;
+
     height: 20%;
+
+}
+
+
+
+.h-one
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0px 50px 0px;
+}
+
+h1
+{
+    padding: 20px 0px 0px 15px;
 }
 
 .dropdown-identity .text-user
 {
-    padding:30px;
-    width: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 0px 20px 0px;
 }
 
 .drop-down-menu
 {
     display: flex;
     height: 10vh;
-    width: 65%;
     align-items: center;
     justify-content: center;
+    margin: 0px 0px 50px 0px;
 }
 
 .drop-down-menu .drop-down .dropButton
@@ -136,9 +155,10 @@
 
 .second-part .dropdown-identity .text-user .text
 {
-    font-size: 15px;
+    font-size: 18px;
     font-weight: bolder;
 }
+
 .easy-container
 {
     align-items: center;
@@ -151,7 +171,7 @@
 
 .slideshow-container
 {
-    max-width: 1000px;
+    max-width: 700px;
     position: relative;
     margin:auto;
 }
@@ -191,7 +211,7 @@
     width: auto;
     margin-top: -22px;
     padding: 16px;
-    color: black;
+    color: rgba(238,92,71);
     font-weight: bold;
     font-size: 18px;
     transition: 0.6s ease;
@@ -263,15 +283,34 @@
 .price
 {
     font-size: 20px;
+
 }
 
 .price-in-numbers
 {
     font-size: 25px;
+    font-family: 'Nerko One', cursive;
 }
 
-.red
-{
+.red {
     color: red;
+}
+
+.green
+{
+    color: green;
+}
+
+.text
+{
+    width: 60%;
+
+}
+
+.container-for-slideshows
+{
+    max-width: 700px;
+    margin: auto;
+    font-family: 'Merriweather', serif;
 }
 
